@@ -1,4 +1,4 @@
-package com.jccs.ms.email.enums;
+package com.jccs.ms.email.application.domain.enums;
 
 public enum StatusEmail {
 	PROCESSING,

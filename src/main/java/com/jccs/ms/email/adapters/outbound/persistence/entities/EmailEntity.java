@@ -1,6 +1,6 @@
-package com.jccs.ms.email.models;
+package com.jccs.ms.email.adapters.outbound.persistence.entities;
 
-import com.jccs.ms.email.enums.StatusEmail;
+import com.jccs.ms.email.application.domain.enums.StatusEmail;
 import lombok.Data;
 
 import javax.persistence.*;
@@ -11,12 +11,11 @@ import java.util.UUID;
 @Data
 @Entity
 @Table(name = "TB_EMAIL")
-public class EmailModel implements Serializable
-{
+public class EmailEntity implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy= GenerationType.AUTO)
 	private UUID emailId;
 	private String ownerRef;
 	private String emailFrom;

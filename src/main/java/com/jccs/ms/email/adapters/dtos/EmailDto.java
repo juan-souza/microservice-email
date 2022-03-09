@@ -1,4 +1,4 @@
-package com.jccs.ms.email.dtos;
+package com.jccs.ms.email.adapters.dtos;
 
 import lombok.Data;
 
